@@ -1,0 +1,11 @@
+main{
+    grid-area: main;
+}
+main p:last-child,main p:last-child  a{
+    
+    font-style: italic;
+    font-weight: bold;
+    color: #0BA8BD;
+    text-decoration: none;
+    font-size: 1em;
+}

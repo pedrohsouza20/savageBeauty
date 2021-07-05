@@ -1,0 +1,24 @@
+.animals-scroll{
+    grid-area: scroll;
+    width: max-content;
+    overflow-y:scroll;
+    height: 275px;
+    background: #0BA8BD;
+    cursor: pointer;
+}
+.animals-scroll::-webkit-scrollbar {
+    width: 12px;
+    background:#076470 ;
+  }
+
+.animals-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+.animals-scroll::-webkit-scrollbar-thumb {
+    background: #0BA8BD;
+    width: 10px;
+  }
+.animals-scroll img{
+    width: 200px;
+}

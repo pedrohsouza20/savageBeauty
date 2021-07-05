@@ -1,0 +1,44 @@
+section{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 60px;
+    align-items: center;
+    grid-template-areas: 
+    "animalImg animalDescription"
+    ;
+}
+section p{
+    box-shadow: 2px 2px 22px rgba(0, 0, 0, 0.15);
+    padding: 10px 10px 10px 0;
+    margin: 5px 0;
+}
+.animal-img{
+    grid-area: animalImg;
+    cursor: pointer;
+    background: #076470;
+    transition: 1s linear;
+    padding-right: 2px;
+}
+.animal-img img{
+    max-width: 300px;
+}
+.animal-img:hover{
+    background: #000;
+    transition: 1s linear;
+}
+.left img:hover{
+    opacity: 0.5;
+    transform: skew(2deg);
+    transition: 1s linear;
+}
+.right img:hover{
+    opacity: 0.5;
+    transform: skew(-2deg);
+    transition: 1s linear;
+}
+.left img:not(:hover), .right img:not(:hover){
+    transition: 1s linear;
+}
+.animal-description{
+    grid-area: animalDescription;
+}

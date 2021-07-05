@@ -1,0 +1,200 @@
+@media (max-width:395px){
+    header{
+        display: block;
+    }
+    .menu-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .menu-logo h1{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.5em !important;
+    }
+    .mobileIcon{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    .mobileIcon{
+        position: absolute;
+        right: 0px;
+        padding: 10px;
+        top: -10px;
+    }
+}
+
+@media (max-width: 700px){
+    .mobile-icon{
+        transition: .5s;
+        transform: rotate(0deg);
+        display: block;
+        visibility: visible;
+        font-size: 40px;
+        padding: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .mobile-icon-active{
+        transition: .5s;
+        transform: rotate(90deg);
+        align-self: flex-end;
+    }
+    .menu-nav{
+        position: relative;
+    }
+    .ul-menu{
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+        transform: translateY(-30px);
+        position: absolute;
+        right: 0px;
+        top: 80px;
+        flex-direction: column;
+        background: #0BA8BD;
+        padding: 30px;
+    }
+    .ul-menu-active{
+        opacity: 1;
+        visibility: visible;
+        transition: .5s;
+        transform: translateX(0px);
+    }
+    .ul-menu > li{
+        margin: 15px 0;
+    }
+    .dropdown-menu{
+        opacity: 0;
+        transition: .3s;
+        transform: translateY(-30px);
+        visibility: hidden !important;
+        position: absolute !important;
+    }
+    .dropdown-menu-active{
+        opacity: 1;
+        transition: .3s;
+        transform: translateY(0px);
+        visibility: visible !important;
+        position: static !important;
+    }
+    .dropdown-menu{
+        margin-top: 15px;
+    }
+}
+
+@media (min-width:1000px){
+    section .animal-img, section .animal-img img{
+        max-width: 200px;
+    }
+    section p{
+        max-width: 700px;
+    }
+}
+@media (max-width:800px){
+    .grid-layout{
+        padding: 0px 15px;
+        grid-template-columns: 100px auto;
+        align-items: center;
+        grid-template-areas: 
+        "header header"
+        "scroll main"
+        "scroll main"
+        "lion lion"
+        "wolf wolf"
+        "tiger tiger"
+        "fox fox"
+        "eagle eagle"
+        "snake snake"
+        "midias midias"
+        "footer footer"
+        ;
+    }
+    .animals-scroll{
+        height: 220px !important;
+    }
+    .animals-scroll, .animals-scroll img{
+        max-width: 150px;
+    }
+    .animals-scroll::-webkit-scrollbar {
+        width: 1px;
+        height: 0px;
+        background:#076470 ;
+      }
+    .midias{
+        flex-direction: row !important;
+        justify-content: center;
+        grid-column: 1 / -1 !important;
+        align-items: center !important;
+    }
+    .midias ion-icon{
+        padding: 5px;
+    }
+    section{
+        grid-template-areas: 
+        "animalDescription animalDescription"
+        "animalImg ." !important
+        ;
+    }
+    .section .animal-img img{
+        max-width: 300px !important;
+    }   
+}
+@media (max-width:600px){
+    .grid-layout{
+        gap: 60px 70px !important;
+    }
+    section{
+        grid-gap: 15px !important;
+        grid-template-columns:minmax(300px 1fr) auto !important;
+        grid-template-areas: 
+        "animalDescription animalDescription"
+        "animalImg animalDescription" !important
+        ;
+    }
+    .section .animal-img{
+        grid-column: 1 / 1;
+    }
+    .section .animal-img img{
+        max-width: 300px !important;
+    } 
+}
+@media (min-width:700px){
+    .dropdown-menu-active::before{
+        position: absolute;
+        display: inline-block;
+        content: '';
+        height: 0;
+        width: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #0BA8BD;
+        margin-right: 10px;
+        top: -15px;
+        left: 20px;
+    }
+    .dropdown-menu-active{
+        margin-top: 39px;
+        padding: 30px;
+    }
+}
+@media (max-width:500px){
+    .grid-layout{
+        padding: 0px 15px;
+        grid-template-columns: auto;
+        align-items: center;
+        grid-template-areas: 
+        "header"
+        "scroll"
+        "main"
+        "lion"
+        "wolf"
+        "tiger"
+        "fox"
+        "eagle"
+        "snake"
+        "midias"
+        "footer"
+        ;
+    }
+}

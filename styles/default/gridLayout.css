@@ -1,0 +1,25 @@
+.lion{grid-area: lion;}
+.wolf{grid-area: wolf;}
+.tiger{grid-area: tiger;}
+.fox{grid-area: fox;}
+.eagle{grid-area: eagle;}
+.snake{grid-area: snake;}
+.grid-layout{
+    display: grid;
+    grid-template-columns: minmax(200px, 200px) minmax(400px, 600px) auto;
+    padding: 30px 130px;
+    gap: 60px;
+    grid-template-areas: 
+    "header header header"
+    "scroll main midias"
+    "lion lion lion"
+    "wolf wolf wolf"
+    "tiger tiger tiger"
+    "fox fox fox"
+    "eagle eagle eagle"
+    "snake snake snake"
+    "footer footer footer"
+    ;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,12 @@
+.midias{
+    grid-area: midias;
+    display: flex;
+    flex-direction: column;
+    grid-column: 3 / 3;
+    align-items: flex-end;
+}
+.midias ion-icon{
+    font-size: 40px;
+    margin: 5px 0;
+    color: #076470;
+}
